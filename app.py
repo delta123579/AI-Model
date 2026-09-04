@@ -68,7 +68,7 @@ if api_key:
                     # Using Groq's fast Llama model
                     response = client.chat.completions.create(
                         messages=[{"role": "user", "content": prompt}],
-                        model="llama-3.3-70b-versatile",
+                        model="llama-3.5-70b-versatile",
                     )
 
                     generated_content = response.choices[0].message.content
